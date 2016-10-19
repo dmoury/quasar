@@ -71,7 +71,7 @@ $(BINDIR)/$(EXEC): $(OBJECTS)
 	@$(LINKER) $@ $(LFLAGS) $^
 	
 $(BINDIR)/$(TESTEXEC): $(TESTOBJECTS)
-	$(LINKER) $@ $(LFLAGS) $^
+	$(LINKER) $@ $(LFLAGS) $^ $(LDFLAGS)
 
 $(OBJDIR)/%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@

@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 
 int doubleInt (int i) {
-  return 2 * i + 1;
+  return 2 * i;
 }
 
 TEST (SquareRootTest, PositiveNos) { 
