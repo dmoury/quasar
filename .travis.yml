@@ -41,7 +41,4 @@ install:
 script: 
   - $CXX --version
   - echo $CXXFLAGS
-  - cd ~/build/richoux/Wall-in/prog/src
-  - $CXX -g $CXXFLAGS main.cpp -o ../bin/quasar
-  - cd ../bin ; ./quasar
-  - valgrind --leak-check=full --show-reachable=yes ../bin/quasar
+  #- valgrind --leak-check=full --show-reachable=yes ../bin/quasar
